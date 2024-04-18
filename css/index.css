@@ -65,7 +65,7 @@ nav {
 nav .home-text {
   color: white;
   font-family: "IBM Plex Mono", monospace;
-  font-size: clamp(1.9rem, 5vw, 2rem);
+  font-size: clamp(1rem, 5vw, 1.5rem);
   padding: 0.5em;
   text-decoration: none;
 }
@@ -297,7 +297,8 @@ body {
 
 main section {
   width: 100%;
-  height: calc(100vh - 4.6em);
+  /* height: calc(100vh - 4.6em); */
+  height: fit-content;
   padding: 0 1em;
 }
 main .hero-introduction {
@@ -311,9 +312,9 @@ main .hero-introduction {
 main .hero-introduction img {
   aspect-ratio: 1;
   object-fit: contain;
-  width: 30em;
-  animation: rotate-infinite 1.5s ease-in-out infinite;
-  animation-delay: 1s;
+  width: 20em;
+  /* animation: rotate-infinite 1.5s ease-in-out infinite; */
+  /* animation-delay: 1s; */
 }
 @keyframes rotate-infinite {
   from {
@@ -333,19 +334,19 @@ main .section-two {
   place-items: center;
 }
 main .section-two h2 {
-  margin: 0 2em;
+  margin: 1rem 2em;
   text-align: center;
   display: inline-block;
   position: relative;
 }
-main .section-two h2::before {
+/* main .section-two h2::before {
   content: "🚧";
   position: absolute;
   top: -1.5em;
   font-size: 5rem;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 @media screen and (max-width: 800px) {
   main .hero-introduction {
