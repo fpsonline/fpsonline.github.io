@@ -64,7 +64,7 @@ nav {
 nav .home-text {
   color: white;
   font-family: "IBM Plex Mono", monospace;
-  font-size: clamp(1.9rem, 5vw, 2rem);
+  ffont-size: clamp(1rem, 5vw, 1.5rem);
   padding: 0.5em;
   text-decoration: none;
 }
