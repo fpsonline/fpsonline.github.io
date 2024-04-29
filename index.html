@@ -1,86 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#282828">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="shortcut icon" type="image/png" href="/assets/logo.jpg"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#282828" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="shortcut icon" type="image/png" href="/assets/logo.jpg" />
     <title>Blaze Battlegrounds</title>
 
-    
     <script>
-        const comingSoon = () => alert('Coming soon!');
+      const comingSoon = () => alert("Coming soon!");
     </script>
-</head>
-<body>
-    
-<nav>
-    <a class="home-text" href="/">Blaze Battlegrounds</a>
-    <div class="links">
+  </head>
+  <body>
+    <nav>
+      <a class="home-text" href="/">Blaze Battlegrounds</a>
+      <div class="links">
         <a class="selected" href="/">Home</a>
         <a class="" href="/blog">Blog</a>
         <a class="" href="/about">About</a>
-    </div>
-    <div class="right-side">
-        
-    </div>
-</nav>
-    
+      </div>
+      <div class="right-side"></div>
+    </nav>
+
     <main>
-        
+      <section class="hero-introduction">
+        <img
+          src="./assets/logo.jpg"
+          alt="Logo of the Raudio Project. It features the letter, 'R', blended together with a music note."
+          style="margin-bottom: 1rem;border-radius: 12px;"
+        />
+        <div class="right-side">
+          <h1>FPS graphic shooting game, multiplayer.</h1>
+          <a
+            class="raudio-redirect-btn accented"
+            href="https://github.com/Khoa-It/FPS-Online-KeyIt"
+            target="_blank"
+            style="border-radius: 12px;"
+            >GitHub</a
+          >
+          <a
+            class="raudio-redirect-btn accented"
+            style="cursor: pointer;border-radius: 12px;"
+            onclick="confirmDownload()"
+            >Download</a
+          >
+        </div>
+      </section>
 
-<section class="hero-introduction">
-    <img src="./assets/logo.jpg" alt="Logo of the Raudio Project. It features the letter, 'R', blended together with a music note.">
-    <div class="right-side">                
-        <h1>FPS graphic shooting game, multiplayer.</h1>
-        <a class="raudio-redirect-btn accented" href="https://github.com/Khoa-It/FPS-Online-KeyIt" target="_blank">GitHub</a>
-        <a class="raudio-redirect-btn accented" onclick=comingSoon() href="#">Download</a>
-    </div>
-</section>
+      <section class="section-two">
+        <h2>Introducing the game</h2>
+        <iframe
+          width="560"
+          height="315"
+          style="margin: 1rem 0"
+          src="https://www.youtube.com/embed/fGP2hZd6QZw?si=Wa75loOQzxNSLR4T"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
 
-
-<section class="section-two">
-    <h2>Introducing the game</h2>
-    <iframe width="560" height="315" style="margin: 1rem 0;" src="https://www.youtube.com/embed/fGP2hZd6QZw?si=Wa75loOQzxNSLR4T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</section>
-
+      <section class="section-three" style="color: #fff;line-height: 2.3;">
+        <h2 align="center">How to install and run the game?</h2>
+        <div style="margin-bottom: 1rem; margin-top: 1rem">
+          <p>
+            After downloading the game, you need to follow these steps to
+            install and play the game:
+          </p>
+          <span>
+            <p>Step 1: Install Python3</p>
+            <p>
+              Firstly, you need to install Python on your computer if you
+              haven't already. You can download Python from the official Python
+              website (<a target="_blank" href="https://www.python.org/">https://www.python.org/</a>) and install it following the
+              instructions.
+            </p>
+            <div style="display: flex;justify-content: center;">
+                <img src="./assets/python_download.png" alt="" width="800" style="border-radius: 12px;">
+            </div>
+          </span>
+          <span>
+            <p>Step 2: Setup virtual environment</p>
+            <p>
+              You can create a Python virtual environment to isolate the
+              installation of packages for this project. This helps avoid
+              conflicts with other packages in the system.
+            </p>
+            <div class="code-container">
+                <pre><code>                
+                    $ git clone git@github.com:Khoa-It/FPS-Online-KeyIt.git
+                    $ cd FPS-Online-KeyIt
+                    $ python3 -m venv my_project_env
+                    $ source my_project_env/bin/activate
+                    $ pip3 install .
+                </code></pre>
+            </div>
+                  
+          </span>
+          <span>
+            <p>Step 3: Install framework and libraries</p>
+            <p>Install the libraries and framework used in the project, including Ursina, Pygame, and Panda3D. You can use pip, the Python package manager, to install them.</p>
+            <div class="code-container">
+                <pre><code>                
+                    $ pip install ursina pygame panda3d
+                </code></pre>
+            </div>
+          </span>
+          <span>
+            <p>Step 4: Run the game</p>
+            <p>After writing the source code, you can run the project by opening a terminal or command prompt, then navigate to the directory containing your source code and run the main Python file.</p>
+            <div class="code-container">
+                <pre><code>                
+                    $ python3 main.py
+                </code></pre>
+            </div>
+            <p>Alternatively, you can choose to run the client.bat and server.bat files to run the game.</p>
+          </span>
+          <div style="display: flex;justify-content: center;">
+                <img src="./assets/goodluck.jpg" alt="" width="120" style="border-radius: 12px;">
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-    <div class="links">
+      <div class="links">
         <section class="raudio-logo-and-copyright">
-            <img src="/assets/logo.jpg" alt="Image of the Raudio logo">
-            <h3>Blaze Battlegrounds</h3>
-            <p>Copyright © 2024</p>
-            <p>All rights reserved.</p>
+          <img style="border-radius: 12px;" src="/assets/logo.jpg" alt="Image of the Raudio logo" />
+          <h3>Blaze Battlegrounds</h3>
+          <p>Copyright © 2024</p>
+          <p>All rights reserved.</p>
         </section>
         <section class="footer-links contact-us">
-            <h4>Contact Us</h4>
-            <div class="links-container">
-                <a href="https://www.youtube.com/@bb_fpsonline">YouTube</a>
-            </div>
+          <h4>Contact Us</h4>
+          <div class="links-container">
+            <a>Email: fpsonline.contact@gmail.com</a>
+          </div>
         </section>
         <section class="footer-links contribute">
-            <h4>Contribute</h4>
-            <div class="links-container">
-                <a href="https://github.com/fpsonline">GitHub</a>
-                <a href="https://github.com/fpsonline/xxx/blob/main/CONTRIBUTING.md">Contribution Guidelines</a>
-                <a href="https://github.com/fpsonline/xxx/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a>
-                <a href="#xxx">Documentation</a>
-            </div>
+          <h4>Infomation</h4>
+          <div class="links-container">
+            <a
+              target="_blank"
+              href="https://github.com/Khoa-It/FPS-Online-KeyIt"
+              >GitHub</a
+            >
+            <a
+              target="_blank"
+              href="https://github.com/Khoa-It/FPS-Online-KeyIt/blob/main/LICENSE"
+              >License</a
+            >
+            <a href="#LinkPDF">Documentation</a>
+          </div>
         </section>
         <section class="footer-links more">
-            <h4>More</h4>
-            <div class="links-container">
-                <a onclick=comingSoon() href="#">Fanpage</a>
-                <a onclick=comingSoon() href="#">Twitter</a>
-            </div>
+          <h4>Social</h4>
+          <div class="links-container">
+            <a
+              target="_blank"
+              href="https://x.com/thieuhoang0903/status/1784972567121711414"
+              >Twitter</a
+            >
+            <a target="_blank" href="https://www.youtube.com/@bb_fpsonline"
+              >YouTube</a
+            >
+          </div>
         </section>
-    </div>
-    <p>This project was created for the Open Source Software Development course at the Saigon University.</p>
-</footer>
+      </div>
+      <p>
+        This project was created for the Open Source Software Development course
+        at the Saigon University.
+      </p>
+    </footer>
+  </body>
 
-</body>
+  <script>
+    function confirmDownload() {
+      var downloadConfirmation = confirm("Do you want to download the game?");
+      if (downloadConfirmation) {
+        window.location.href =
+          "https://github.com/Khoa-It/FPS-Online-KeyIt/archive/refs/heads/main.zip";
+      }
+    }
+  </script>
 </html>

@@ -22,7 +22,7 @@ h2 {
 }
 
 a {
-  color: #FFE9D2;
+  color: #9cc4fd;
   font-family: "IBM Plex Sans", sans-serif;
   text-decoration: none;
 }
@@ -40,13 +40,13 @@ a {
 }
 
 .accented {
-  background: #FFE9D2;
+  background-image: linear-gradient(to bottom right, #e0c3ff, #9cc4fd);
   color: black;
 }
 
 .outlined {
   background: #282828;
-  box-shadow: inset 0px 0px 0px 1px #FFE9D2;
+  box-shadow: inset 0px 0px 0px 1px #fac1ea;
 }
 
 /* Nav Bar */
@@ -88,7 +88,7 @@ nav .links a:not(.selected):active::after {
   content: "";
   width: 65%;
   height: 2px;
-  background-color: #FFE9D2;
+  background-color: #fac1ea;
   position: absolute;
   bottom: -5px;
   left: 50%;
@@ -107,7 +107,7 @@ nav .links .selected::after {
   content: "";
   width: 65%;
   height: 2px;
-  background-color: #FFE9D2;
+  background-color: #fac1ea;
   position: absolute;
   bottom: -5px;
   left: 50%;
@@ -145,7 +145,7 @@ footer .links .raudio-logo-and-copyright p {
 }
 footer .links .footer-links h4 {
   position: relative;
-  color: #FFE9D2;
+  color: #fac1ea;
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.875rem;
   font-weight: 600;
@@ -159,7 +159,7 @@ footer .links .footer-links h4::after {
   left: 0;
   height: 1px;
   width: 100%;
-  background: #FFE9D2;
+  background: #fac1ea;
 }
 footer .links .footer-links a {
   display: block;
@@ -180,7 +180,7 @@ footer > p {
 
 footer::before {
   content: "";
-  background: #FFE9D2;
+  background: #fac1ea;
   position: absolute;
   top: 0;
   left: 0;
@@ -266,7 +266,7 @@ footer::before {
 .team-member-card h3 {
   font-family: "IBM Plex Mono", monospace;
   font-size: 1.125rem;
-  color: #FFE9D2;
+  color: #fac1ea;
   font-weight: 500;
 }
 .team-member-card .links {
@@ -279,7 +279,7 @@ footer::before {
   display: block;
   width: 2.2em;
   aspect-ratio: 0.8;
-  background: #FFE9D2;
+  background: #fac1ea;
   border-radius: 2px;
   position: relative;
 }
@@ -332,6 +332,12 @@ main .section-two {
   display: grid;
   gap: 0;
   place-items: center;
+}
+
+main .section-three{
+  background: #282828;
+  display: grid;
+  gap: 0;
 }
 main .section-two h2 {
   margin: 1rem 2em;
